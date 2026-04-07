@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "dotenv": "^17.4.1"
+  "name": "meteo-platform",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full-stack weather intelligence platform for Rwanda",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev": "npm run dev --prefix client",
+    "start": "npm start --prefix server",
+    "server:dev": "npm run dev --prefix server",
+    "client:build": "npm run build --prefix client"
   }
 }
